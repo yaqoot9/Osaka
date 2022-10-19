@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+:root{
+
+--maincolor:#ff206e;
+}
+.navbar-brand{
+
+letter-spacing: 2px;
+font-size: 1rem;
+font-weight: 600;
+text-transform: uppercase;
+color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: .875rem;
+    color: white;
+}
+
+.navbar-nav .nav-link.active{
+    color:var(--maincolor) ;
+    text-transform: uppercase;
+} 
+
+.home.picture{font-family: 'Open Sans',sans-serif;
+    background-image: url('../img/bg.jpg');
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+  
+    
+    }
+
+.home.picture a{color: var(--maincolor);}
+.home-info {
+    height:100vh;
+}
+.home-title{
+font-size: 3rem;
+font-weight: 800;
+
+}
+section{color:white;}
+
+
+.home-effect{
+    opacity: 0;
+animation: text-opacity 1s;
+animation-fill-mode: forwards;
+position: relative;
+}
+
+.home-effect:after {
+    content:'';
+
+    left:0;
+    background-color: #fff;
+    width:0%;
+    height:100%;
+    position: absolute;
+    animation: block 1.5s;
+    animation-delay: 1s;
+
+}
+@keyframes block {
+    0%{
+        left:0;
+        width:0%;
+    }
+    75%{
+         left:0;
+        width:100%; 
+    }
+    100%{
+         left:100%;
+        width:0%; 
+    }
+}
+
+@keyframes text-opacity {
+
+    0%  {opacity: 0;}
+
+
+    100%  {opacity: 1;}
+    
+}
+
+
+.item{border-radius: 50%;
+    padding: 8px;
+    border-width: 0;
+border:white solid;
+border-width: .5px;
+font-size: 10px;}
+
+.home-bar ul{position: absolute;
+left: 10px;
+top: 730px;
+}
+
+.home-bar a{font-size: .7rem;
+    height: 36px;
+    width: 36px;
+font-weight: 100;
+border-radius: 50%;
+border: solid rgb(150, 147, 147);
+border-width: .4px;
+padding: 8px;
+text-align: center;
+margin-right: 2px;}
+
+.a{
+position: absolute;
+width: 14%;
+left: 5px;
+bottom: 10px;
+margin-right: 1px;}
+ 
+
+
+
+
+.title h2{color: black;
+font-weight: 800;
+font-size: 2.5rem;
+padding-top: 20px;}
+
+.title h3{
+    color:darkgray;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.cc{color: var(--maincolor);}
+
+ #home-tab{color: #ff206e;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20rem;
+}
+
+#profile-tab,#contact-tab{border: none;
+background-color: transparent;
+margin-bottom: 20rem;}
+
+.container{margin-top: 6rem;}
+
+.about, .portofilo ,.TESTIMONIALS{background-image: url('../img/light_dot.jpg');
+    height: 100vh;}
+
+
+
+    button{background-color: #ff206e;}
+
+
+    .tab-content{position: absolute;
+    top:1990px;}
+
+    .sizeimg{width: 5%;}
+
+    
+    .carousel-indicators [data-bs-target]{
+
+        background-color: red;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+    }
+    .carousel-indicators{
+        bottom: -59px;
+    }
+
+
+    
